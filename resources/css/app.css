@@ -1,0 +1,5 @@
+/* ClassPulse pages load /css/classpulse.css via CDN layouts.
+   Keep this file minimal so Vite builds do not pull a Tailwind stack. */
+body {
+    margin: 0;
+}

@@ -109,3 +109,6 @@ database/seeders/ClassPulseSeeder.php
 2. **Timer sync** — client countdown uses `question_started_at` + `time_limit_seconds`; periodic poll of `server_now` corrects drift.
 3. **Leaderboard** — no stored ranks table; `GROUP BY student_id` over `session_responses` with index on `(quiz_session_id, student_id)`.
 4. **Scoring** — documented formula in `App\Services\ScoringService` (speed-weighted correct answers).
+
+Local tip: run `START-CLASSPULSE.bat` or `php artisan serve`.
+
